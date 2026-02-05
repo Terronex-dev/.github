@@ -11,7 +11,7 @@ Store documents, embeddings, and AI context in a single file. No servers, no dat
 | [aifbin-lite](https://github.com/Terronex-dev/aifbin-lite) | Core library — create, read, convert | Available |
 | [aifbin-pro](https://github.com/Terronex-dev/aifbin-pro) | CLI with semantic search, batch ingest, watch mode | Available |
 | [bot-bin](https://github.com/Terronex-dev/bot-bin) | Persistent memory for AI chatbots | Available |
-| [aifbin-recall](https://github.com/Terronex-dev/aifbin-recall).| Local-first memory server | Available |
+| [aifbin-recall](https://github.com/Terronex-dev/aifbin-recall)| Local-first memory server | Available |
 
 ## Links
 
