@@ -37,12 +37,12 @@ While Engram represents our cutting-edge research, **AIF-BIN continues to serve 
 
 ## Product Portfolio
 
-### 🧠 Engram (Neural Memory)
+### Engram (Neural Memory)
 | Repository | Description | Status |
 |------------|-------------|--------|
 | [engram](https://github.com/Terronex-dev/engram) | **Engram v1** — Neural memory format with 400x performance | Public |
 
-### 📦 AIF-BIN Ecosystem (Proven Foundation)  
+### AIF-BIN Ecosystem (Proven Foundation)  
 | Repository | Description | Status |
 |------------|-------------|--------|
 | [aifbin-pro](https://github.com/Terronex-dev/aifbin-pro) | **AIF-BIN Pro** — Professional memory management CLI | Public |
@@ -50,7 +50,7 @@ While Engram represents our cutting-edge research, **AIF-BIN continues to serve 
 | [aifbin-recall](https://github.com/Terronex-dev/aifbin-recall) | **AIF-BIN Recall** — Local memory server (HTTP/MCP) | Public |
 | [bot-bin](https://github.com/Terronex-dev/bot-bin) | **Bot-BIN** — Persistent memory for chatbots | Public |
 
-### 🔬 Research & Innovation
+### Research & Innovation
 - **[Evolution Research](https://terronex.dev/evolution-research)** — Technical analysis of our AIF-BIN → Engram journey
 - **[Neural Memory White Paper](https://terronex.dev/engram-whitepaper)** — Deep dive into biological inspiration and architecture
 - **[Performance Benchmarks](https://github.com/Terronex-dev/engram/blob/main/TESTING.md)** — Comprehensive validation results
