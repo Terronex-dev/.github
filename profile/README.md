@@ -45,7 +45,7 @@ All SDKs pass the same test suite. Files are fully cross-compatible.
 npm install @terronex/engram
 
 # Python
-git clone https://github.com/Terronex-dev/engram-py
+pip install terronex-engram
 
 # Rust
 cargo add --git https://github.com/Terronex-dev/engram-rs
