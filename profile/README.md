@@ -8,8 +8,6 @@
 
 **Allo** is a neural memory assistant. Load any .engram file, search semantically, chat with your data. Works with local LLMs (Ollama) or cloud providers (Anthropic, OpenAI).
 
-**Allo Teach** is an adaptive teaching engine. Converts textbooks into interactive lessons with 8 question types, difficulty progression, and LLM-generated content. The LLM teaches, the engram is the textbook.
-
 ## Engram SDKs
 
 | Language | Package | Status |
@@ -26,7 +24,6 @@ All SDKs pass the same test suite. Files are fully cross-compatible.
 | Project | Description |
 |---------|-------------|
 | [allo](https://github.com/Terronex-dev/allo) | Neural memory assistant with semantic search |
-| allo-teach | Adaptive teaching engine (included in Allo) |
 
 ## Tools
 
@@ -47,7 +44,6 @@ The OpenStax converter transforms CC BY 4.0 college textbooks into .engram files
 - Economics
 - Calculus
 - Algebra and Trigonometry
-- And more
 
 ## Performance
 
