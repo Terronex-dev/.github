@@ -2,74 +2,81 @@
 
 **Neural Memory for AI Systems**
 
-Building the memory layer for intelligent applications. One format, multiple languages, production-ready.
+## What We Build
 
-## Engram
+**Engram** is a binary memory format for AI applications. Hierarchical storage, semantic search, multi-modal content, integrity verification. One file format that works across TypeScript, Python, Rust, and Go.
 
-A binary memory format designed for AI systems. Hierarchical, searchable, multi-modal.
+**Allo** is a neural memory assistant. Load any .engram file, search semantically, chat with your data. Works with local LLMs (Ollama) or cloud providers (Anthropic, OpenAI).
 
-**Features:**
-- Sub-millisecond semantic search (HNSW indexing)
-- Hierarchical memory trees with parent/child relationships
-- Multi-modal support (text, images, audio, code)
-- Integrity verification (SHA-256)
-- Streaming for large files
-- Entity extraction and linking
+**Allo Teach** is an adaptive teaching engine. Converts textbooks into interactive lessons with 8 question types, difficulty progression, and LLM-generated content. The LLM teaches, the engram is the textbook.
 
-**Performance:** 400x faster than brute-force search. 93.3% recall accuracy validated across 340+ real-world sessions.
+## Engram SDKs
 
-## SDKs
+| Language | Package | Status |
+|----------|---------|--------|
+| TypeScript | [@terronex/engram](https://www.npmjs.com/package/@terronex/engram) | Published |
+| Python | [engram-py](https://github.com/Terronex-dev/engram-py) | Ready |
+| Rust | [engram-rs](https://github.com/Terronex-dev/engram-rs) | Ready |
+| Go | [engram-go](https://github.com/Terronex-dev/engram-go) | Ready |
 
-| Language | Package | Repository |
-|----------|---------|------------|
-| TypeScript | [@terronex/engram](https://www.npmjs.com/package/@terronex/engram) | [engram](https://github.com/Terronex-dev/engram) |
-| Python | engram-py | [engram-py](https://github.com/Terronex-dev/engram-py) |
-| Rust | engram-rs | [engram-rs](https://github.com/Terronex-dev/engram-rs) |
-| Go | engram-go | [engram-go](https://github.com/Terronex-dev/engram-go) |
-
-All SDKs are cross-compatible. Files created in one language can be read by any other.
-
-## Tools
-
-| Repository | Description |
-|------------|-------------|
-| [engram-sdk](https://github.com/Terronex-dev/engram-sdk) | Converters and utilities (OpenStax textbook importer) |
-| [engram-test-suite](https://github.com/Terronex-dev/engram-test-suite) | Cross-SDK validation fixtures |
+All SDKs pass the same test suite. Files are fully cross-compatible.
 
 ## Applications
 
-| Repository | Description |
-|------------|-------------|
-| [allo](https://github.com/Terronex-dev/allo) | Neural memory assistant with semantic search and LLM integration |
+| Project | Description |
+|---------|-------------|
+| [allo](https://github.com/Terronex-dev/allo) | Neural memory assistant with semantic search |
+| allo-teach | Adaptive teaching engine (included in Allo) |
+
+## Tools
+
+| Project | Description |
+|---------|-------------|
+| [engram-sdk](https://github.com/Terronex-dev/engram-sdk) | OpenStax textbook converter (10+ books supported) |
+| [engram-test-suite](https://github.com/Terronex-dev/engram-test-suite) | Cross-SDK validation fixtures |
+
+## Content
+
+The OpenStax converter transforms CC BY 4.0 college textbooks into .engram files:
+
+- U.S. History (32 chapters, 2,971 nodes)
+- Biology
+- Chemistry  
+- Anatomy and Physiology
+- Astronomy
+- Economics
+- Calculus
+- Algebra and Trigonometry
+- And more
+
+## Performance
+
+- 400x faster than brute-force search
+- Sub-millisecond retrieval (0.3ms average)
+- 93.3% recall accuracy across 340+ sessions
+- HNSW indexing for O(log n) complexity
 
 ## Quick Start
 
-**TypeScript:**
 ```bash
+# TypeScript
 npm install @terronex/engram
-```
 
-**Python:**
-```bash
+# Python
 git clone https://github.com/Terronex-dev/engram-py
-```
 
-**Rust:**
-```toml
-[dependencies]
-engram = { git = "https://github.com/Terronex-dev/engram-rs" }
-```
+# Rust
+cargo add --git https://github.com/Terronex-dev/engram-rs
 
-**Go:**
-```bash
+# Go
 go get github.com/Terronex-dev/engram-go
 ```
 
 ## Links
 
-- Website: [terronex.dev](https://terronex.dev)
-- npm: [@terronex/engram](https://www.npmjs.com/package/@terronex/engram)
+- [terronex.dev](https://terronex.dev)
+- [@terronex/engram on npm](https://www.npmjs.com/package/@terronex/engram)
 
 ---
 
-MIT licensed. Open source.
+MIT licensed. Open source. Patent pending.
