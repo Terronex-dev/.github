@@ -42,7 +42,7 @@ Full specification: [SPEC_V2.md](https://github.com/Terronex-dev/engram/blob/mai
 
 | Language | Package | Version | Status |
 |----------|---------|---------|--------|
-| TypeScript | [@terronex/engram](https://www.npmjs.com/package/@terronex/engram) | **2.0.0** | V2 Complete |
+| TypeScript | [@terronex/engram](https://www.npmjs.com/package/@terronex/engram) | **2.0.1** | V2 Complete |
 | Python | [engram-py](https://github.com/Terronex-dev/engram-py) | 1.x | V1 (V2 compatible) |
 | Rust | [engram-rs](https://github.com/Terronex-dev/engram-rs) | 1.x | V1 (V2 compatible) |
 | Go | [engram-go](https://github.com/Terronex-dev/engram-go) | 1.x | V1 (V2 compatible) |
