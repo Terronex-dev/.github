@@ -8,33 +8,31 @@
 
 **Allo** is a neural memory assistant. Load any .engram file, search semantically, chat with your data. Works with local LLMs (Ollama) or cloud providers (Anthropic, OpenAI).
 
-## Engram V2 — Now Available
+## Engram V2.1 — Spatial Intelligence
 
-**From trees to graphs. From search to reasoning.**
-
-V2 adds typed relationships and knowledge graph traversal:
+**From trees to graphs. From search to reasoning. Now with location.**
 
 ```typescript
-// Create knowledge graphs
+// V2: Knowledge graphs
 graph.addLink(createLink(studyId, claimId, 'supports'));
-graph.addLink(createLink(finding1, finding2, 'contradicts'));
-
-// Traverse relationships
 const evidence = graph.getLinkedNodes(claimId, 'supports');
-const path = graph.findPath(startId, endId);
 
-// Auto-link similar content
-graph.autoLinkSimilar(0.85);
+// V2.1: Spatial queries
+const nearby = spatialRecall(tree, {
+  center: { x: 48.8566, y: 2.3522 },  // Paris
+  radius: 500,                         // km
+  metric: 'haversine'
+});
 ```
 
-| Feature | V1 | V2 |
-|---------|----|----|
-| Semantic search | ✓ | ✓ |
-| Hierarchical tree | ✓ | ✓ |
-| Typed links | ✗ | ✓ |
-| Graph traversal | ✗ | ✓ |
-| Spatial positions | ✗ | ✓ |
-| Confidence scores | ✗ | ✓ |
+| Feature | V1 | V2 | V2.1 |
+|---------|----|----|------|
+| Semantic search | ✓ | ✓ | ✓ |
+| Typed links | ✗ | ✓ | ✓ |
+| Graph traversal | ✗ | ✓ | ✓ |
+| Spatial positions | ✗ | ✓ | ✓ |
+| **Distance queries** | ✗ | ✗ | ✓ |
+| **Geo (Haversine)** | ✗ | ✗ | ✓ |
 
 Full specification: [SPEC_V2.md](https://github.com/Terronex-dev/engram/blob/main/SPEC_V2.md)
 
@@ -42,7 +40,7 @@ Full specification: [SPEC_V2.md](https://github.com/Terronex-dev/engram/blob/mai
 
 | Language | Package | Version | Status |
 |----------|---------|---------|--------|
-| TypeScript | [@terronex/engram](https://www.npmjs.com/package/@terronex/engram) | **2.0.1** | V2 Complete |
+| TypeScript | [@terronex/engram](https://www.npmjs.com/package/@terronex/engram) | **2.1.0** | V2.1 Spatial |
 | Python | [engram-py](https://github.com/Terronex-dev/engram-py) | 1.x | V1 (V2 compatible) |
 | Rust | [engram-rs](https://github.com/Terronex-dev/engram-rs) | 1.x | V1 (V2 compatible) |
 | Go | [engram-go](https://github.com/Terronex-dev/engram-go) | 1.x | V1 (V2 compatible) |
